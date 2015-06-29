@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang ="en">
-
-
-
 <?php
 
 if (isset($_POST['submit'])) {
@@ -17,7 +12,7 @@ if (isset($_POST['submit'])) {
 
 
 
-
+   // TODO: hardcoding is bad. make this path relative to the root of the project. -CLE
 	$file = "/Users/mhakim/Sites/Gas-Mileage/gasoline.txt";
 
 	// print_r($result);
@@ -31,13 +26,8 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
-
-
-
-
-
-
-
+<!DOCTYPE html>
+<html lang ="en">
 <html>
 
 <body>
@@ -49,38 +39,24 @@ if (isset($_POST['submit'])) {
 	<h5><p>Miles Travelled:<input name="num1"></p></h5>
 	<h2><p>Number of Gallons Used:<input name="num2"</p></h2>
 
+   <!-- TODO: style tags shouldn't be in the body -CLE -->
 	<style>
-
-
-
-
-
-
 		p {
-
 			color: darkred;
-
 			font-size: 20px;
 		}
 
 		h5 {
-
 			color: darkcyan;
 			font-size: 40px;
 			padding-left: 320px;
-
-
 		}
 		h1 {
-
 			color: darkcyan;
 			font-size: 40px;
 			padding-left: 290px;
-
 		}
-
 		h2 {
-
 			padding-left: 244px;
 		}
 
@@ -100,13 +76,8 @@ if (isset($_POST['submit'])) {
 	</table>
 </form>
 
+<!-- TODO: Try posting to another page and printing the results there. -CLE --> 
 <h3><p>Gas Mileage:<?php if (count($_POST)>0) echo "$result"; ?></p></h3>
 
-
-
-
 </body>
-
-
-
 </html>
